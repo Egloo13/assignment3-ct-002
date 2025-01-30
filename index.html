@@ -16,39 +16,67 @@
             .sora {
                 font-family: "Sora", serif;
             }
+            @keyframes fadeScale {
+              from {
+               opacity: 0.1;
+               transform: scale(0.7);
+            }
+             to {
+              opacity: 1;
+              transform: scale(1);
+            }
+            }
+            .animate-fade-scale {
+           animation: fadeScale 3s ease-out forwards;
+            }
         </style>
     </head>
 <body>
+  <!--header division  -->
+    <header>
     <!-- nav section -->
-    <nav class="lg:mx-32 mx-4 mt-4"> 
-        <div class="navbar sora  flex justify-between">
-          <div>
-          <img class="block lg:hidden" src="images/mlogo.PNG" alt="">
-          <img class="hidden lg:block" src="images/logo-header.png" alt="">
-        </div>
-          <div class="hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Product</a></li>
-                <li><a>Services</a></li>
-                <li><a>Contact us</a></li>
-              </ul>
-            </div>
-          <div class="lg:flex gap-3 hidden">
-              <div><i class="fa-solid fa-magnifying-glass"></i></div>
-              <div><i class="fa-solid fa-cart-shopping"></i></div>
-              <div> <button class="btn btn-sm border border-[#179800]">Login</button></div>
-              <div> <a class="btn btn-sm text-white bg-[#179800]">Register</a></div>
+       <nav class="lg:mx-32 mx-4 mt-4"> 
+  <div class="navbar sora  flex justify-between">
+    <div>
+    <img class="block lg:hidden" src="images/mlogo.PNG" alt="">
+    <img class="hidden lg:block" src="images/logo-header.png" alt="">
+  </div>
+    <div class="hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Product</a></li>
+          <li><a>Services</a></li>
+          <li><a>Contact us</a></li>
+        </ul>
+      </div>
+    <div class="lg:flex gap-3 hidden">
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        <div> <button class="btn btn-sm border border-[#179800]">Login</button></div>
+        <div> <a class="btn btn-sm text-white bg-[#179800]">Register</a></div>
+    </div>
+    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <div class="space-y-1 cursor-pointer">
+            <div class="w-6 h-0.5 bg-[#179800]"></div>
+            <div class="w-6 h-0.5 bg-[#179800]"></div>
+            <div class="w-6 h-0.5 bg-[#179800]"></div>
           </div>
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <div class="space-y-1 cursor-pointer">
-                  <div class="w-6 h-0.5 bg-[#179800]"></div>
-                  <div class="w-6 h-0.5 bg-[#179800]"></div>
-                  <div class="w-6 h-0.5 bg-[#179800]"></div>
-                </div>
-          </div>
-        </div>
-      </nav>
-    <header></header>
+    </div>
+  </div>
+       </nav>
+    <!-- hero section -->
+       <section class="sora lg:px-72 px-9 my-32 bg-gradient-to-t from-[#EFEBE3] to-white">
+      <div>
+       <div class="text-center">
+           <h1 class="text-5xl leading-normal font-sm pb-8 text-[#111111]">Freshness <span class="text-[#179800]">You Can <br>
+               Count</span> On, Prices You’ll Love!</h1>
+           <p class="text-xl font-normal text-[#111111] pb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+       </div>
+       <div class="relative">
+           <img src="images/hero-vegetables.png" alt="" class="animate-fade-scale">
+       </div>
+      </div>
+       </section>
+    </header>
     <main></main>
     <footer></footer>
 </body>
