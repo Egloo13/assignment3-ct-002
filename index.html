@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>nav</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+        <style>
+            /* my custom styles*/
+            .sora {
+                font-family: "Sora", serif;
+            }
+        </style>
+    </head>
+<body>
+    <!-- nav section -->
+    <nav class="lg:mx-32 mt-4"> 
+        <div class="navbar sora  flex justify-between">
+          <div>
+          <img class="block lg:hidden" src="images/mlogo.PNG" alt="">
+          <img class="hidden lg:block" src="images/logo-header.png" alt="">
+        </div>
+          <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+          <div class="lg:flex gap-3 hidden">
+              <div><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+              <div> <button class="btn btn-sm border border-[#179800]">Login</button></div>
+              <div> <a class="btn btn-sm text-white bg-[#179800]">Register</a></div>
+          </div>
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div class="space-y-1 cursor-pointer">
+                  <div class="w-6 h-0.5 bg-[#179800]"></div>
+                  <div class="w-6 h-0.5 bg-[#179800]"></div>
+                  <div class="w-6 h-0.5 bg-[#179800]"></div>
+                </div>
+          </div>
+        </div>
+      </nav>
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
