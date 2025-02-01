@@ -11,25 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-        <style>
-            /* my custom styles*/
-            .sora {
-                font-family: "Sora", serif;
-            }
-            @keyframes fadeScale {
-              from {
-               opacity: 0.1;
-               transform: scale(0.7);
-            }
-             to {
-              opacity: 1;
-              transform: scale(1);
-            }
-            }
-            .animate-fade-scale {
-           animation: fadeScale 3s ease-out forwards;
-            }
-        </style>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
 <body class="sora">
   <!--header division  -->
@@ -38,8 +20,10 @@
        <nav class="lg:mx-32 mx-4 mt-4"> 
   <div class="navbar flex justify-between">
     <div>
-    <img class="block lg:hidden" src="images/mlogo.PNG" alt="">
-    <img class="hidden lg:block" src="images/logo-header.png" alt="">
+      <a href="">
+        <img class="block lg:hidden" src="images/mlogo.PNG" alt="">
+        <img class="hidden lg:block" src="images/logo-header.png" alt="">
+      </a>
   </div>
     <div class="hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -49,12 +33,12 @@
         </ul>
       </div>
     <div class="lg:flex gap-3 hidden">
-        <div><i class="fa-solid fa-magnifying-glass"></i></div>
-        <div><i class="fa-solid fa-cart-shopping"></i></div>
-        <div> <button class="btn btn-sm border border-[#179800]">Login</button></div>
-        <div> <a class="btn btn-sm text-white bg-[#179800]">Register</a></div>
+        <div><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+        <div><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+        <div> <button class="btn font-semibold animate-pulse btn-sm border border-[#179800]">Login</button></div>
+        <div> <a class="btn font-semibold animate-pulse btn-sm text-white bg-[#179800]">Register</a></div>
     </div>
-    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+    <div tabindex="0" role="button" class="btn font-semibold animate-pulse btn-ghost lg:hidden">
         <div class="space-y-1 cursor-pointer">
             <div class="w-6 h-0.5 bg-[#179800]"></div>
             <div class="w-6 h-0.5 bg-[#179800]"></div>
@@ -138,7 +122,7 @@
                <div class="pt-8">
                    <h2 class="card-title text-2xl pb-5 font-bold  text-white ">30% off</h2>
                    <p class=" pb-5">"Healthy vegetables at 30% off! <br> Limited-time  offer  for your favorite greens!"</p>
-                   <button class="bg-white py-1 px-5 rounded-lg">Buy Now</button>
+                   <button class="btn font-semibold animate-pulse bg-white py-1 px-5 rounded-lg">Buy Now</button>
                </div>
                        <div class="">
                            <img
@@ -237,7 +221,7 @@
                 <p class="py-6">
                     Growing vegetables is satisfying, healthy and fun to do, but beginners may be forgiven for feeling a little daunted as to where to begin the project.
                 </p>
-                <button class="btn bg-[#35ff12] text-white">Read More</button>
+                <button class="btn font-semibold animate-pulse bg-[#35ff12] text-white">Read More</button>
               </div>
             </div>
           </div>
@@ -253,7 +237,7 @@
                 <p class="py-6">
                     There is no shortage of praise for vegetarian diets, but new evidence suggests that not eating meat could make you depressed.
                 </p>
-                <button class="btn bg-[#ff8826] text-white">Read More</button>
+                <button class="btn font-semibold animate-pulse bg-[#ff8826] text-white">Read More</button>
               </div>
             </div>
           </div>
@@ -269,7 +253,7 @@
                 <p class="py-6">
                     Is It Really Necessary To Wash Your Fruit and Vegetables Before Consuming?
                      </p>
-                <button class="btn bg-[#29e2ff] text-white">Read More</button>
+                <button class="btn font-semibold animate-pulse bg-[#29e2ff] text-white">Read More</button>
               </div>
             </div>
           </div>
@@ -282,14 +266,14 @@
   </div>
 </section>
     <!-- Arrival & Offers section -->
-  <section class=" px-2 lg:mx-36 pt-32 lg:pb-72 pb-96 my-20 ">
+  <section class=" px-2 lg:mx-36 pt-8 lg:pb-72 pb-96 my-20 ">
     <h2 class="text-3xl font-bold text-[#179800] pb-10">Arrival & Offers</h2>
     <div class="flex flex-col lg:flex-row gap-5 ">
       <div class="flex justify-between items-center bg-[#115414] rounded-lg ">
           <div class="">
               <img src="images/dawat-logo.png" alt="" class="pt-12">
               <div class="pl-4 pt-6">
-                  <button class="bg-[#63B76D] py-2 px-4 rounded-lg">Cook Exotic Dishes</button>
+                  <button class=" font-semibold animate-pulse bg-[#63B76D] py-2 px-4 rounded-lg">Cook Exotic Dishes</button>
                   <p class="text-3xl text-white py-6 ">UP to <span class="font-bold">20% OFF</span></p>
               </div>
           </div>
@@ -300,7 +284,7 @@
       <div class="flex justify-between items-center bg-[#102861] rounded-lg ">
           <div class="pl-4 ">
               <img src="images/india-gate-logo.png" alt=" " class="pb-4">
-              <button class="bg-[#2A4D97] text-white rounded-lg py-2 px-5">World’s No.1 Rice</button>
+              <button class=" font-semibold animate-pulse bg-[#2A4D97] text-white rounded-lg py-2 px-5">World’s No.1 Rice</button>
               <p class="text-3xl text-white pt-5 ">UP to <span class="font-bold">40% OFF</span></p>
           </div>
           <div class="lg:pl-[104px]">
@@ -320,7 +304,7 @@
               <p class=" font-semibold pb-6">Exclusive training tips, ticks, product deals and more.</p>
               <input class="w-full h-10 pl-6  text-xs bg-white border border-gray-300 rounded-md " type="text" placeholder="Enter email...."> <br>
              <div class="pt-6">
-              <button class="btn bg-[#179800] text-white">Subscribe</button>
+              <button class="btn font-semibold animate-pulse bg-[#179800] text-white">Subscribe</button>
              </div>
           </div>
         </div>
@@ -335,19 +319,19 @@
          <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
      </div>
      <div class="pb-8">
-         <ul>
-             <li class="pb-4"><a" href="#">Product</a></li>
-             <li class="pb-4"><a" href="#">Services</a></li>
-             <li class="pb-4"><a" href="#">Contact us</a></li>
-         </ul>
+      <ul class="menu">
+        <li><a>Product</a></li>
+        <li><a>Services</a></li>
+        <li><a>Contact us</a></li>
+      </ul>
      </div>
      <div class="pb-8">
          <p class="pb-4">Follow Us</p>
          <div class="flex gap-5">
-             <i class="fa-brands fa-facebook"></i>
-             <i class="fa-brands fa-instagram"></i>
-             <i class="fa-brands fa-youtube"></i>
-             <i class="fa-brands fa-linkedin"></i>
+             <i class="fa-brands fa-facebook font-semibold animate-pulse"></i>
+             <i class="fa-brands fa-instagram font-semibold animate-pulse"></i>
+             <i class="fa-brands fa-youtube font-semibold animate-pulse"></i>
+             <i class="fa-brands fa-linkedin font-semibold animate-pulse"></i>
          </div>
      </div>
     </div>
