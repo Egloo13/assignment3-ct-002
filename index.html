@@ -31,12 +31,12 @@
             }
         </style>
     </head>
-<body>
+<body class="sora">
   <!--header division  -->
     <header>
     <!-- nav section -->
        <nav class="lg:mx-32 mx-4 mt-4"> 
-  <div class="navbar sora  flex justify-between">
+  <div class="navbar flex justify-between">
     <div>
     <img class="block lg:hidden" src="images/mlogo.PNG" alt="">
     <img class="hidden lg:block" src="images/logo-header.png" alt="">
@@ -64,7 +64,7 @@
   </div>
        </nav>
     <!-- hero section -->
-       <section class="sora lg:px-72 px-9 my-32 bg-gradient-to-t from-[#EFEBE3] to-white">
+       <section class=" lg:px-72 px-9 my-32 bg-gradient-to-t from-[#EFEBE3] to-white">
       <div>
        <div class="text-center">
            <h1 class="text-5xl leading-normal font-sm pb-8 text-[#111111]">Freshness <span class="text-[#179800]">You Can <br>
@@ -79,8 +79,8 @@
     </header>
     <!-- main division -->
     <main>
-       <!-- Services section -->
-   <section class="sora lg:mx-36 md:mx-28 px-4 my-20">
+    <!-- Services section -->
+  <section class=" lg:mx-36 md:mx-28 px-4 my-20">
     <h2 class="text-4xl pb-8 font-semibold text-[#179800]">Services</h2>
        <div class="flex flex-col lg:flex-row justify-between items-center  gap-6">
            <!-- card-1 -->
@@ -130,7 +130,7 @@
              </div>
        </div>
   </section> 
-  <!-- products section -->
+    <!-- products section -->
    <section class=" bg-[#EFEBE3] sora lg:px-36 px-2 py-32 my-20">
     <h2 class="text-4xl pb-16 pl-4 font-semibold text-[#179800]">Popular Products</h2>
     <div class="flex lg:flex-row flex-col justify-center items-center gap-5">
@@ -222,31 +222,94 @@
            </div>
    </div>
  </section>
-  <!-- Arrival & Offers section -->
-  <section class="sora px-2 lg:mx-36 pt-32 lg:pb-72 pb-96 my-20 ">
+  <!-- Extra section for assignment -->
+  <section class="  lg:mx-36 px-4 mx-4 py-12 rounded-lg ">
+    <h1 class=" text-[#179800] font-bold text-center text-5xl lg:pb-10 pb-6">FOOD FOR LIFE</h1>
+<div class="carousel w-full">
+    <div id="item1" class="carousel-item w-full">
+        <div class="hero bg-gradient-to-t lg:bg-gradient-to-r  from-[#82fd6c]  to-transparent lg:py-12 border border-green-100 rounded-md">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img
+                src="images/news1.png"
+                class="max-w-sm rounded-lg " />
+              <div class="lg:pr-48 text-green-950 ">
+                <h1 class="text-3xl font-bold">Healthy Life For Food!</h1>
+                <p class="py-6">
+                    Growing vegetables is satisfying, healthy and fun to do, but beginners may be forgiven for feeling a little daunted as to where to begin the project.
+                </p>
+                <button class="btn bg-[#35ff12] text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="item2" class="carousel-item w-full">
+        <div class="hero bg-gradient-to-t lg:bg-gradient-to-r  from-[#fa9e53]  to-transparent lg:py-12 border border-green-100 rounded-md">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img
+                src="images/news-2.png"
+                class="max-w-sm rounded-lg " />
+              <div class="lg:pr-48 text-green-950 ">
+                <h1 class="text-3xl font-bold">Should Stock Keep Fresh!</h1>
+                <p class="py-6">
+                    There is no shortage of praise for vegetarian diets, but new evidence suggests that not eating meat could make you depressed.
+                </p>
+                <button class="btn bg-[#ff8826] text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="item3" class="carousel-item w-full">
+        <div class="hero bg-gradient-to-t lg:bg-gradient-to-r  from-[#66e7fb]  to-transparent lg:py-12 border border-green-100 rounded-md">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img
+                src="images/news-3.png"
+                class="max-w-sm rounded-lg " />
+              <div class="lg:pr-48 text-green-950 ">
+                <h1 class="text-3xl font-bold">Washing Is More Important!</h1>
+                <p class="py-6">
+                    Is It Really Necessary To Wash Your Fruit and Vegetables Before Consuming?
+                     </p>
+                <button class="btn bg-[#29e2ff] text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="flex w-full justify-center gap-2 py-2">
+    <a href="#item1" class="btn btn-xs">1</a>
+    <a href="#item2" class="btn btn-xs">2</a>
+    <a href="#item3" class="btn btn-xs">3</a>
+  </div>
+</section>
+    <!-- Arrival & Offers section -->
+  <section class=" px-2 lg:mx-36 pt-32 lg:pb-72 pb-96 my-20 ">
     <h2 class="text-3xl font-bold text-[#179800] pb-10">Arrival & Offers</h2>
     <div class="flex flex-col lg:flex-row gap-5 ">
       <div class="flex justify-between items-center bg-[#115414] rounded-lg ">
-          <div class="lg:pr-52">
+          <div class="">
               <img src="images/dawat-logo.png" alt="" class="pt-12">
-              <div class="pl-4 pt-8">
+              <div class="pl-4 pt-6">
                   <button class="bg-[#63B76D] py-2 px-4 rounded-lg">Cook Exotic Dishes</button>
-                  <p class="text-3xl text-white py-8 ">UP to <span class="font-bold">20% OFF</span></p>
+                  <p class="text-3xl text-white py-6 ">UP to <span class="font-bold">20% OFF</span></p>
               </div>
           </div>
-          <img src="images/dawat-mock-up.png" alt="" class="w-56 h-64 pt-10 lg:w-72 lg:h-72">
+          <div class="lg:pl-40">
+            <img src="images/dawat-mock-up.png" alt="" class="w-56 h-64 pt-10 lg:pt-4 lg:w-64 lg:h-[250px]">
+          </div>
       </div>
       <div class="flex justify-between items-center bg-[#102861] rounded-lg ">
-          <div class="pl-4 lg:pr-32">
-              <img src="images/india-gate-logo.png" alt=" " class="pb-8">
+          <div class="pl-4 ">
+              <img src="images/india-gate-logo.png" alt=" " class="pb-4">
               <button class="bg-[#2A4D97] text-white rounded-lg py-2 px-5">World’s No.1 Rice</button>
               <p class="text-3xl text-white pt-5 ">UP to <span class="font-bold">40% OFF</span></p>
           </div>
-          <img src="images/india-gate-mock-up.png" alt="" class="pt-5 pr-2">
+          <div class="lg:pl-[104px]">
+            <img src="images/india-gate-mock-up.png" alt="" class="pt-5 pr-2">
+          </div>
       </div>
     </div>
 </section>
- <!-- Get Grocery section -->
+    <!-- Get Grocery section -->
   <section class="relative">
     <div class="bg-[#EFEBE3] sora lg:mx-36 px-4 mx-4 py-12 rounded-lg absolute lg:top-[-260px] top-[-400px] left-0 right-0 ">
         <div class="lg:flex justify-evenly items-center">
@@ -264,8 +327,8 @@
      </div>
   </section>
     </main>
-       <!-- footer section -->
-    <footer class="sora pt-96 lg:pt-80 pb-40 lg:px-36  bg-[#179800]">
+    <!-- footer section -->
+    <footer class=" pt-96 lg:pt-80 pb-40 lg:px-36  bg-[#179800]">
     <div class="pl-5 text-white lg:flex justify-between items-center lg:gap-40">
      <div class="pb-8">
          <img src="images/logo-footer.png" alt="" class="pb-4">
